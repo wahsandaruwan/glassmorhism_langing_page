@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 /* -----------Reset----------- */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Redressed';
+  font-family: 'Poppins';
   box-sizing: border-box;
 }
 
@@ -28,6 +28,7 @@ a {
 
 /* -----------Main container----------- */
 .main-container {
+  position: relative;
   width: 85vw;
   min-height: 90vh;
   background: linear-gradient(
@@ -36,12 +37,57 @@ a {
     rgba(255, 255, 255, 0.1)
   );
   backdrop-filter: blur(0.5rem);
+  box-shadow: 3px 3px 40px 2px #221c19;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
-  box-shadow: 3px 3px 40px 2px #221c19;
+}
+
+/* Nav bar */
+.menu {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom left,
+    rgba(190, 132, 81, 0.473),
+    rgba(37, 35, 35, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 1px 1px 40px 1px #2b2323;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.menu > li {
+  margin: 0 20px;
+}
+
+.menu > li > a {
+  color: #1b1212;
+  background: linear-gradient(
+    to bottom left,
+    rgba(231, 181, 136, 0.2),
+    rgba(37, 35, 35, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 2px 2px 40px 8px #2b2323;
+  font-size: 1rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu > li > a:hover {
+  padding: 12px 27px;
 }
 
 /* Image */
@@ -56,12 +102,12 @@ a {
     rgba(255, 255, 255, 0.1)
   );
   backdrop-filter: blur(0.5rem);
+  box-shadow: 1px 1px 40px 2px #221c19;
   padding: 10px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 40px 2px #221c19;
   animation: anim1 5s infinite alternate ease-in-out forwards;
 }
 
@@ -79,36 +125,31 @@ a {
   height: 70%;
 }
 
-.main-container .overlay {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(78, 22, 1, 0.3);
-}
-
 /* Text */
 .main-container .text .heading {
-  font-size: 4rem;
-  color: #4e1601;
+  font-size: 3rem;
+  color: #1b1212;
   margin: 20px 0;
   word-spacing: 10px;
 }
 
 /* Button */
 .main-container .buttons .btn-cta {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
-  background-color: #4e1601;
-  color: #ffffff;
+  background: linear-gradient(
+    to top right,
+    rgba(185, 173, 173, 0.4),
+    rgba(73, 72, 72, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 2px 2px 40px 10px #2b2323;
+  color: #1b1212;
   padding: 20px 30px;
   border-radius: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .main-container .buttons .btn-cta:hover {
-  background-color: #ffffff;
-  color: #4e1601;
+  transform: translateY(10px);
 }
