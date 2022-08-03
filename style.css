@@ -28,7 +28,7 @@ a {
 
 /* -----------Main container----------- */
 .main-container {
-  width: 90vw;
+  width: 85vw;
   min-height: 90vh;
   background: linear-gradient(
     to bottom left,
@@ -44,8 +44,9 @@ a {
 }
 
 .main-container .img {
-  width: 450px;
-  height: 450px;
+  position: relative;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   background: linear-gradient(
     to bottom left,
@@ -53,8 +54,8 @@ a {
     rgba(255, 255, 255, 0.1)
   );
   backdrop-filter: blur(0.5rem);
-  padding: 20px;
-  border-radius: 50%;
+  padding: 10px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,23 +76,35 @@ a {
   height: 70%;
 }
 
+.main-container .overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(78, 22, 1, 0.3);
+}
+
 .main-container .text .heading {
   font-size: 5rem;
-  color: #491a07;
+  color: #4e1601;
   margin: 20px 0;
   word-spacing: 10px;
 }
 
 .main-container .buttons .btn-cta {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: block;
-  background-color: #491a07;
+  background-color: transparent;
+  border: 4px solid #4e1601;
+  color: #4e1601;
   padding: 20px 30px;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .main-container .buttons .btn-cta:hover {
-  background-color: #ffffff;
-  color: #491a07;
+  border: 4px solid #ffffff;
+  color: #ffffff;
 }
