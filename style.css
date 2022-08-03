@@ -24,6 +24,7 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* -----------Main container----------- */
@@ -46,7 +47,7 @@ a {
 }
 
 /* Nav bar */
-.menu {
+.main-container .menu {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -67,11 +68,11 @@ a {
   border-radius: 15px;
 }
 
-.menu > li {
+.main-container .menu > li {
   margin: 0 20px;
 }
 
-.menu > li > a {
+.main-container .menu > li > a {
   color: #1b1212;
   background: linear-gradient(
     to bottom left,
@@ -80,13 +81,13 @@ a {
   );
   backdrop-filter: blur(0.5rem);
   box-shadow: 2px 2px 40px 8px #2b2323;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 15px 30px;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
 }
 
-.menu > li > a:hover {
+.main-container .menu > li > a:hover {
   padding: 12px 27px;
 }
 
@@ -128,6 +129,7 @@ a {
 /* Text */
 .main-container .text .heading {
   font-size: 3rem;
+  font-weight: 600;
   color: #1b1212;
   margin: 20px 0;
   word-spacing: 10px;
@@ -135,7 +137,7 @@ a {
 
 /* Button */
 .main-container .buttons .btn-cta {
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: block;
   background: linear-gradient(
     to top right,
@@ -152,4 +154,56 @@ a {
 
 .main-container .buttons .btn-cta:hover {
   transform: translateY(10px);
+}
+
+/* Footer */
+.main-container .footer {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  z-index: 90;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom left,
+    rgba(190, 132, 81, 0.473),
+    rgba(37, 35, 35, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 1px 1px 40px 1px #2b2323;
+  padding: 25px 50px;
+  border-radius: 15px;
+}
+
+.main-container .footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .footer .social .sc-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 30px;
+}
+
+.main-container .footer .social .sc-icon svg path:nth-child(1) {
+  fill: #1b1212;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-container .footer .social .sc-icon:hover svg path:nth-child(1) {
+  fill: #682803;
+}
+
+.main-container .footer .desc {
+  margin-top: 20px;
+}
+
+.main-container .footer .desc .credit {
+  text-align: center;
+  font-size: 0.9rem;
 }
