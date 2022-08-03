@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 /* -----------Reset Document----------- */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Mouse Memoirs';
+  font-family: 'Dancing Script';
   box-sizing: border-box;
 }
 
@@ -43,6 +43,7 @@ a {
   border-radius: 20px;
 }
 
+/* Image */
 .main-container .img {
   position: relative;
   width: 300px;
@@ -55,7 +56,7 @@ a {
   );
   backdrop-filter: blur(0.5rem);
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,25 +87,28 @@ a {
   background-color: rgba(78, 22, 1, 0.3);
 }
 
+/* Text */
 .main-container .text .heading {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: 700;
   color: #4e1601;
   margin: 20px 0;
   word-spacing: 10px;
 }
 
+/* Button */
 .main-container .buttons .btn-cta {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
   display: block;
-  background-color: transparent;
-  border: 4px solid #4e1601;
-  color: #4e1601;
+  background-color: #4e1601;
+  color: #ffffff;
   padding: 20px 30px;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
 }
 
 .main-container .buttons .btn-cta:hover {
-  border: 4px solid #ffffff;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #4e1601;
 }
