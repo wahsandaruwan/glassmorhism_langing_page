@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
-/* -----------Reset Document----------- */
+/* -----------Reset----------- */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Dancing Script';
+  font-family: 'Redressed';
   box-sizing: border-box;
 }
 
@@ -41,6 +41,7 @@ a {
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
+  box-shadow: 3px 3px 40px 2px #221c19;
 }
 
 /* Image */
@@ -60,6 +61,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 40px 2px #221c19;
   animation: anim1 5s infinite alternate ease-in-out forwards;
 }
 
@@ -90,7 +92,6 @@ a {
 /* Text */
 .main-container .text .heading {
   font-size: 4rem;
-  font-weight: 700;
   color: #4e1601;
   margin: 20px 0;
   word-spacing: 10px;
@@ -98,8 +99,7 @@ a {
 
 /* Button */
 .main-container .buttons .btn-cta {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
   display: block;
   background-color: #4e1601;
   color: #ffffff;
